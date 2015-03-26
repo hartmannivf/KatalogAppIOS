@@ -29,6 +29,7 @@
         <script src="plugins/com.phonegap.plugins.barcodescanner/www/barcodescanner.js"></script>
         <script src="plugins/org.apache.cordova.network-information/www/Connection.js"></script>
         <script src="plugins/org.apache.cordova.network-information/www/network.js"></script>
+        <script src="plugins/org.apache.cordova.device/www/device.js"></script>
         
         <script src="spec/index.js"></script>
         
@@ -109,7 +110,7 @@
                             
                             <li id="scan">
                                 <div id="divscanner">
-                                    <a href="#">
+                                    <a>
                                         <img src="css/scanner.png" />
                                         <span>Scanner</span>
                                     </a>
@@ -168,7 +169,7 @@
                             
                             <li id="scansub">
                                 <div id="divscanner">
-                                    <a href="#Barcodescanner">
+                                    <a>
                                         <img src="css/scanner.png" />
                                         <span>Scanner</span>
                                     </a>
@@ -223,7 +224,7 @@
                             
                             <li id="scanpro">
                                 <div id="divscanner">
-                                    <a href="scanner.html">
+                                    <a>
                                         <img src="css/scanner.png" />
                                         <span>Scanner</span>
                                     </a>
@@ -241,7 +242,7 @@
                         </ul>
                     </div>
                 </div>
-                <br />
+               
                 <div id="subdivtrans">
                     
                     <div id="products" style="overflow-y:scroll;"></div>
@@ -278,7 +279,7 @@
                             
                             <li id="scanartikelgruppen">
                                 <div id="divscanner">
-                                    <a href="scanner.html">
+                                    <a>
                                         <img src="css/scanner.png" />
                                         <span>Scanner</span>
                                     </a>
@@ -347,7 +348,7 @@
                             
                             <li id="scanartgrp">
                                 <div id="divscanner">
-                                    <a href="scanner.html">
+                                    <a>
                                         <img src="css/scanner.png" />
                                         <span>Scanner</span>
                                     </a>
@@ -408,12 +409,9 @@
                             </li>
                             
                             
-                            
-                            
-                            
                             <li id="scanmedia">
                                 <div id="divscanner">
-                                    <a href="scanner.html">
+                                    <a>
                                         <img src="css/scanner.png" />
                                         <span>Scanner</span>
                                     </a>
@@ -482,13 +480,10 @@
                                 </div>
                                 
                             </li>
-                            
-                            
-                            
-                            
+
                             <li id="scansuche">
                                 <div id="divscanner">
-                                    <a href="scanner.html">
+                                    <a>
                                         <img src="css/scanner.png" />
                                         <span>Scanner</span>
                                     </a>
@@ -510,7 +505,6 @@
                 
                 
                 <div id="zahler"></div>
-                
                 
                 <div id="divsuchediv">
                     
@@ -558,7 +552,7 @@
                             
                             <li id="scanaurtikelsuche">
                                 <div id="divscanner">
-                                    <a href="scanner.html">
+                                    <a>
                                         <img src="css/scanner.png" />
                                         <span>Scanner</span>
                                     </a>
@@ -1063,17 +1057,22 @@
                 //----------------------------------------------------------lokale daten werden ausgegeben--------------------------------------------------------------------------------------------------------------
                 localStorage_ausgeben: function () {
                     
+                    alert("localStorage");
                     
                     document.getElementById("progressbar").style.display="none";
                     document.getElementById("icon").style.display="";
                     
-                    console.log('ich bin im localStorage');
                     
-                    var alleDaten = JSON.parse(window.localStorage.getItem('feld'));
+                    
+                    var alleDaten = JSON.parse(window.localStorage.getItem("feld"));
+                 
+                    
+                    alert(alleDaten);
+                    
                     
                     datahandler.data = alleDaten;
                     
-                    console.log(datahandler.data);
+                   alert(datahandler.data);
                     
                     /*  for (var i = 0; i < localStorage.length; i++) {
                      
@@ -1093,7 +1092,7 @@
                 loaddata: function () {
                     
                     
-                    console.log('mit dem Webservice verbunden');
+                  
                     
                     $.ajax({
                            type: 'POST',
@@ -1111,10 +1110,19 @@
                            
                            
                            // Daten als feld in localStorage speichern!
-                           var feld = [];
-                            window.localStorage["feld"] = JSON.stringify(datahandler.data);
-                           var alleDaten = JSON.parse(window.localStorage["feld"]);
+                           //var feld = [];
+                          
                            
+                           
+                           //window.localStorage.setItem["feld"] = JSON.stringify(datahandler.data);
+                          // window.localStorage.setItem("feld",JSON.stringify(datahandler.data));
+                           
+                          // alert("okay1");
+
+                           
+                           //var alleDaten = JSON.parse(window.localStorage.getItem["feld"]);
+                           
+                           //alert(alleDaten);
                            
                            
                            //console.log(alleDaten);
@@ -1756,34 +1764,31 @@
             
     
            
-           var inet = navigator.online
+           var inet = navigator.connection.type;
+           
           
-            
-            if (inet === false) {
+          
+        
+            if (inet === "none") {
                 
-             console.log('offline');
-                $(document).ready(function () {
-                                  datahandler.localStorage_ausgeben();
+                    alert('Du bist OFFline');
+                       // $(document).ready(function () {
+                                          
+                            //datahandler.localStorage_ausgeben();
                                   
-                                  });
+                              //    });
+           
                                   
             } else {
-               
-                console.log('online');
+            
                 $(document).ready(function () {
                                   
                                   datahandler.loaddata();
-                                  
-                        
-                                  
                                   });
-                
-                                  
-                }
             
         }
     
-        
+          }
         
         
         //-----------------------------------------page Aufruf----------------------------------------------------------------------------------------------------------------------------
