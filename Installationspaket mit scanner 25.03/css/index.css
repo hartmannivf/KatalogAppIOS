@@ -1539,13 +1539,14 @@
 
     #media {
         background-color: white; 
-     
+		overflow-y:scroll; 
         height:220px;
         margin-bottom: 10%;
         font-family: OpenSans-Regular;
         margin-left: 4%;
         margin-right:4%;
         margin-top:20%;
+		border-radius: 3px;
     }
 
         #media span {
@@ -1616,9 +1617,9 @@
            margin-right:5%;
            margin-left:5%;
             background-color: white;
-            height:450px;
+            height:220px;
             overflow:scroll;
-			margin-top: 20%;
+			margin-top: 10%;
 
 
         }
