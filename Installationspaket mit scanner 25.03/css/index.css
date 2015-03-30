@@ -412,7 +412,7 @@
     #prgr{
         
         float: left;
-        font-size:1.2em;
+        font-size:0.7em;
         
         
     }
@@ -1225,7 +1225,7 @@
 		#prgr{
 		
 			float: left;
-		font-size:1.5em;
+		font-size:0.7em;
 		
 		
 		}
@@ -1288,7 +1288,7 @@
               width:auto;
         margin-left:5%;
         margin-right:5%;
-        margin-top:20%;
+        margin-top:16%;
         height:220px;
        	border-radius: 4px;
         background:rgba(255,255,255,0.5);
@@ -1313,7 +1313,7 @@
             width:auto;
         margin-left:5%;
         margin-right:5%;
-        margin-top:15%;
+        margin-top:16%;
         height:220px;
        	border-radius: 4px;
         background:rgba(255,255,255,0.5);
@@ -1509,7 +1509,7 @@
       
 
 
-        margin-top: 25%;
+        margin-top: 20%;
         height:470px;
         margin-left: 5%;
         margin-right: 5%;
@@ -1545,7 +1545,7 @@
         font-family: OpenSans-Regular;
         margin-left: 4%;
         margin-right:4%;
-        margin-top:5%
+        margin-top:20%;
     }
 
         #media span {
@@ -1618,6 +1618,7 @@
             background-color: white;
             height:450px;
             overflow:scroll;
+			margin-top: 20%;
 
 
         }
@@ -2062,7 +2063,7 @@
 		#prgr{
 		
 			float: left;
-		font-size:1.2em;
+		font-size:0.7em;
 		
 		
 		}
@@ -2877,7 +2878,7 @@ font-family:openSand-Regular;
 		#prgr{
 		
 			float: left;
-		font-size:1.5em;
+		font-size:0.7em;
 		
 		
 		}
@@ -3711,7 +3712,7 @@ font-family:openSand-Regular;
     #prgr{
         
         float: left;
-        font-size:1.2em;
+        font-size:0.7em;
         
         
     }
@@ -4525,7 +4526,7 @@ font-family:openSand-Regular;
 		#prgr{
 		
 			float: left;
-		font-size:1.5em;
+		font-size:0.7em;
 		
 		
 		}
