@@ -1540,12 +1540,12 @@
     #media {
         background-color: white; 
 		overflow-y:scroll; 
-        height:220px;
+        height:210px;
         margin-bottom: 10%;
         font-family: OpenSans-Regular;
         margin-left: 4%;
         margin-right:4%;
-        margin-top:20%;
+        margin-top:17%;
 		border-radius: 3px;
     }
 
@@ -1617,9 +1617,9 @@
            margin-right:5%;
            margin-left:5%;
             background-color: white;
-            height:220px;
+            height:210px;
             overflow:scroll;
-			margin-top: 10%;
+			margin-top: 17%;
 
 
         }
