@@ -1,4 +1,4 @@
-@font-face {
+﻿@font-face {
     font-family: OpenSans-Light;
     src: url(Open_Sans/OpenSans-Light.ttf);
 }
@@ -45,7 +45,7 @@
     
     #uber {
         min-width: 100%;
-        max-width: 300%;
+        max-width: 299%;
         position: absolute;
         top: 15%;
         text-align: center;
