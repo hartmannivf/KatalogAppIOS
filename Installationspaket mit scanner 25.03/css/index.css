@@ -1690,7 +1690,6 @@
             
         }
 
-
         .mainContent {
             width: 100%;
         }
@@ -2121,7 +2120,7 @@
         margin-left:5%;
         margin-right:5%;
         margin-top:33%;
-        height:510px;
+        height:530px;
        	border-radius: 4px;
         background:rgba(255,255,255,0.5);
         text-align:center;
@@ -2939,7 +2938,7 @@ font-family:openSand-Regular;
         
         #prodivtrans{
         
-  width:auto;
+		width:auto;
         margin-left:5%;
         margin-right:5%;
         margin-top:20%;
