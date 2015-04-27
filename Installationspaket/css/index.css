@@ -56,6 +56,15 @@
         font-size: 1.4em;
         font-family: OpenSans-Light;
     }
+	
+	#sprache{
+	color: white;
+	font-size: 0.5em;
+	font-family: OpenSans-Light;
+	text-align: right;
+	
+	
+	}
     
     
     #hartmann {
