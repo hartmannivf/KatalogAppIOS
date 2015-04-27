@@ -2505,7 +2505,7 @@ font-family:openSand-Regular;
 
 }
 
-@media only screen and (min-device-width:600px) and (max-device-width:400px)and (orientation: landscape) {
+@media only screen and (min-device-width:400px) and (max-device-width:800px)and (orientation: landscape) {
     
     /*Smartphones iphone6  quer*/
     
