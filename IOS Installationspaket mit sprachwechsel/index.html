@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-.
+
 <html>
     <head>
         
@@ -38,16 +38,15 @@
             <div data-role="page">
                 
                 <div id=" logo">
-                    <img id="hartmann" src="css/logo.png" />
+                    <img id="hartmann" src="css/logo.png"/>
                 </div>
-				
-				<p id="sprache">
-						DE
-				</p>
-				
-			
+                
+                
+                <div id="sprachen"><a id="de">DE</a> | <a id="fr">FR</a></div>
+                
+                
                 <div id="uber">
-                    <h1 id="uberschrift">
+                    <h1 id="uberschrift" tkey="ueberschrift">
                         WIR SIND DIE HELFER<br />
                         DER HELFER.
                     </h1>
@@ -58,28 +57,28 @@
                     
                     <div id="iconicon">
                         <a href="#produktgruppen" style="display:block"><img id="img_icon" src="css/start_icons/klinik.png" /></a>
-                        <span id="klinik"><b>KLINIK</b></span>
+                        <span id="klinik" tkey="klinik"><b>KLINIK</b></span>
                     </div>
                     <div id="iconiconalters">
                         <a href="#produktgruppen" style="display:block"><img id="img_icon" src="css/start_icons/alters.png" /></a>
-                        <span id="alters"><b>ALTERS-UND<br /> PFLEGEHEIME</b></span>
+                        <span id="alters" tkey="alters"><b>ALTERS-UND<br /> PFLEGEHEIME</b></span>
                     </div>
                     <div id="iconicon">
                         <a href="#produktgruppen" style="display:block"><img id="img_icon" src="css/start_icons/arzt.png" /></a>
-                        <span id="arzt"><b>ARZTPRAXIS</b></span>
+                        <span id="arzt" tkey="arzt"><b>ARZTPRAXIS</b></span>
                     </div>
                     
                     <div id="iconicon1">
                         <a href="#produktgruppen" style="display:block"><img src="css/start_icons/apo.png" /></a>
-                        <span><b>APOTHEKE/<br />DROGERIE</b></span>
+                        <span tkey="apotheke"><b>APOTHEKE/<br />DROGERIE</b></span>
                     </div>
                     <div id="iconiconindustrie">
                         <a href="#produktgruppen" style="display:block"><img src="css/start_icons/industrie.png"></a>
-                        <span><b>INDUSTRIE</b></span>
+                        <span tkey="industrie"><b>INDUSTRIE</b></span>
                     </div>
                     <div id="iconicon1">
                         <a href="#produktgruppen" style="display:block"><img src="css/start_icons/private.png" /></a>
-                        <span><b>PRIVATE</b></span>
+                        <span tkey="private"><b>PRIVATE</b></span>
                     </div>
                 </div>
             </div>
@@ -106,7 +105,7 @@
                                 <div id="divprodukt">
                                     <a href="#">
                                         <img src="css/pro_weiss.png" id="produktbild" />
-                                        <span>Produkte</span>
+                                        <span tkey="produkte">Produkte</span>
                                     </a>
                                 </div>
                                 
@@ -124,7 +123,7 @@
                             
                             <li id="sucheli">
                                 <div id="divsuche">
-                                    <textarea id="suchen" rows="1" style="overflow: hidden; margin-left: 78px" placeholder="SUCHE"></textarea>
+                                    <textarea id="suchen" rows="1" style="overflow: hidden; margin-left: 78px" placeholder="RESEARCH"></textarea>
                                     <img onclick="datahandler.Suchen(document.getElementById('suchen').value);" src="css/lupe.png" id="bild" />
                                 </div>
                             </li>
@@ -132,7 +131,11 @@
                         </ul>
                     </div>
                 </div>
-               
+                
+                <br><br><br>
+                
+                <div id="sprachen1"><a id="de1"><b>DE</b></a> | <a id="fr1"><b> FR </b></a></div>
+                
                 <div id="prodivtrans">
                     <br />
                     
@@ -164,7 +167,7 @@
                                 <div id="divprodukt">
                                     <a href="#produktgruppen">
                                         <img src="css/pro_weiss.png" id="produktbild" />
-                                        <span>Produkte</span>
+                                        <span tkey="produkte">Produkte</span>
                                     </a>
                                 </div>
                                 
@@ -183,7 +186,7 @@
                             
                             <li id="sucheli">
                                 <div id="divsuche">
-                                    <textarea id="subsuchen" style="overflow: hidden; margin-left: 78px" placeholder="SUCHE"></textarea>
+                                    <textarea id="subsuchen" style="overflow: hidden; margin-left: 78px" placeholder="RESEARCH"></textarea>
                                     <img onclick="datahandler.Suchen(document.getElementById('subsuchen').value);" src="css/lupe.png" id="bild" />
                                 </div>
                             </li>
@@ -191,6 +194,11 @@
                         </ul>
                     </div>
                 </div>
+                
+                <br><br><br>
+               
+                <div id="sprachen1"><a id="de2"><b>DE</b></a> | <a id="fr2"><b> FR </b></a></div>
+                
                 <div id="subdivtrans">
                     
                     <div id="sub" style="overflow-y:scroll;"></div>
@@ -218,13 +226,11 @@
                                 <div id="divprodukt">
                                     <a href="#produktgruppen">
                                         <img src="css/pro_weiss.png" id="produktbild" />
-                                        <span>Produkte</span>
+                                        <span tkey="produkte">Produkte</span>
                                     </a>
                                 </div>
                                 
                             </li>
-                            
-                            
                             
                             <li id="scanpro">
                                 <div id="divscanner">
@@ -238,7 +244,7 @@
                             
                             <li id="sucheli">
                                 <div id="divsuche">
-                                    <textarea id="prosuchen" style="overflow: hidden; margin-left: 78px" placeholder="SUCHE"></textarea>
+                                    <textarea id="prosuchen" style="overflow: hidden; margin-left: 78px" placeholder="RESEARCH"></textarea>
                                     <img onclick="datahandler.Suchen(document.getElementById('prosuchen').value);" src="css/lupe.png" id="bild" />
                                 </div>
                             </li>
@@ -246,8 +252,11 @@
                         </ul>
                     </div>
                 </div>
-           
-                <div id="subdivtrans">
+                <br><br><br>
+              
+                <div id="sprachen1"><a id="de3"><b>DE</b></a> | <a id="fr3"><b> FR </b></a></div>
+                
+                <div id="produktdivtrans">
                     
                     <div id="products" style="overflow-y:scroll;"></div>
                 </div>
@@ -275,7 +284,7 @@
                                 <div id="divprodukt">
                                     <a href="#produktgruppen">
                                         <img src="css/pro_weiss.png" id="produktbild" />
-                                        <span>Produkte</span>
+                                        <span tkey="produkte">Produkte</span>
                                     </a>
                                 </div>
                                 
@@ -293,7 +302,7 @@
                             
                             <li id="sucheli">
                                 <div id="divsuche">
-                                    <textarea id="artgrpsuchen" style="overflow: hidden; margin-left: 78px" placeholder="SUCHE"></textarea>
+                                    <textarea id="artgrpsuchen" style="overflow: hidden; margin-left: 78px" placeholder="RESEARCH"></textarea>
                                     <img onclick="datahandler.Suchen(document.getElementById('artgrpsuchen').value);" src="css/lupe.png" id="bild" />
                                 </div>
                             </li>
@@ -343,7 +352,7 @@
                                 <div id="divprodukt">
                                     <a href="#produktgruppen">
                                         <img src="css/pro_weiss.png" id="produktbild" />
-                                        <span>Produkte</span>
+                                        <span tkey="produkte">Produkte</span>
                                     </a>
                                 </div>
                                 
@@ -362,7 +371,7 @@
                             
                             <li id="sucheli">
                                 <div id="divsuche">
-                                    <textarea id="artgrpartsuchen" style="overflow: hidden; margin-left: 78px" placeholder="SUCHE"></textarea>
+                                    <textarea id="artgrpartsuchen" style="overflow: hidden; margin-left: 78px" placeholder="RESEARCH"></textarea>
                                     <img onclick="datahandler.Suchen(document.getElementById('artgrpartsuchen').value);" src="css/lupe.png" id="bild" />
                                 </div>
                             </li>
@@ -406,7 +415,7 @@
                                 <div id="divprodukt">
                                     <a href="#produktgruppen">
                                         <img src="css/pro_weiss.png" id="produktbild" />
-                                        <span>Produkte</span>
+                                        <span tkey="produkte">Produkte</span>
                                     </a>
                                 </div>
                                 
@@ -428,7 +437,7 @@
                             
                             <li id="sucheli">
                                 <div id="divsuche">
-                                    <textarea id="mediacentersuche" style="overflow: hidden; margin-left: 78px" placeholder="SUCHE"></textarea>
+                                    <textarea id="mediacentersuche" style="overflow: hidden; margin-left: 78px" placeholder="RESEARCH"></textarea>
                                     <img onclick="datahandler.Suchen(document.getElementById('mediacentersuche').value);" src="css/lupe.png" id="bild" />
                                 </div>
                             </li>
@@ -446,7 +455,7 @@
                     <b><hr style="color:#83d0e3; margin-left:5%; margin-right:5%;" /></b>
                     
                     <div id="divmediacenter"></div>
-                
+                    
                     
                     
                     <div id="prgrlinks"></div>
@@ -482,7 +491,7 @@
                                 <div id="divprodukt">
                                     <a href="#produktgruppen">
                                         <img src="css/pro_weiss.png" id="produktbild" />
-                                        <span>Produkte</span>
+                                        <span tkey="produkte">Produkte</span>
                                     </a>
                                 </div>
                                 
@@ -503,7 +512,7 @@
                             
                             <li id="sucheli">
                                 <div id="divsuche">
-                                    <textarea id="suchesuche" style="overflow: hidden; margin-left: 78px" placeholder="SUCHE"></textarea>
+                                    <textarea id="suchesuche" style="overflow: hidden; margin-left: 78px" placeholder="RESEARCH"></textarea>
                                     
                                     <img onclick="datahandler.Suchen(document.getElementById('suchesuche').value);" src="css/lupe.png" id="bild"/>
                                 </div>
@@ -552,7 +561,7 @@
                                 <div id="divprodukt">
                                     <a href="#produktgruppen">
                                         <img src="css/pro_weiss.png" id="produktbild" />
-                                        <span>Produkte</span>
+                                        <span tkey="produkte">Produkte</span>
                                     </a>
                                 </div>
                                 
@@ -573,7 +582,7 @@
                             
                             <li id="sucheli">
                                 <div id="divsuche">
-                                    <textarea id="artikelsuchensuche" style="overflow: hidden; margin-left: 78px" placeholder="SUCHE"></textarea>
+                                    <textarea id="artikelsuchensuche" style="overflow: hidden; margin-left: 78px" placeholder="RESEARCH"></textarea>
                                     <img onclick="datahandler.Suchen(document.getElementById('artikelsuchensuche').value);" src="css/lupe.png" id="bild" />
                                 </div>
                             </li>
@@ -597,8 +606,73 @@
         
         
         <script>        //-----------------------------------------------Prdouktgruppen werden angezeigt---------------------------------------------------------------------------------------------------------------
+          
+          var franz = 1; // SETZT DIE SPRACHE AUF FRANZÖSISCH
+          
+         
+         //function transalate
+         var translate = function (jsdata){
+              $("[tkey]").each(function(index){
+                               var strTr = jsdata[$(this).attr('tkey')];
+                               $(this).html(strTr);
+              
+                               })};
+        
+        
+        //DIE SPRACHFUNKTIONEN WERDEN AUFGERUFEN
+
+            $("#fr").click(function(){
+                           franz=0;
+                           $.getJSON('fr.json', translate);
+            });
+              
+            $("#de").click(function(){
+                             franz=1;
+                             $.getJSON('de.json', translate);
+                             
+            });
             
             
+            
+                             
+            $("#fr1").click(function(){
+                            franz=0;
+                            $.getJSON('fr.json', translate);
+            });
+                                            
+            $("#de1").click(function(){
+                            franz=1;
+                            $.getJSON('de.json', translate);
+                                                           
+            });
+                    
+                    
+            $("#fr2").click(function(){
+                            franz=0;
+                            $.getJSON('fr.json', translate);
+                                    
+            });
+                                    
+            $("#de2").click(function(){
+                            franz=1;
+                            $.getJSON('de.json', translate);
+            });
+            
+            
+                
+            $("#fr3").click(function(){
+                            franz=0;
+                            $.getJSON('fr.json', translate);
+            });
+                
+            $("#de3").click(function(){
+                            franz=1;
+                            $.getJSON('de.json',translate);
+            });
+                
+                    
+                    
+
             datahandler =
             
             {
@@ -613,13 +687,29 @@
                         
                         var div = document.createElement('div');
                         var pgname = datahandler.data[index].name;
+                        var pgnamefr = datahandler.data[index].frname;
+                        
                         var prgrbild = datahandler.data[index].image;
                         
                         
                         
                         div.style.styleFloat = "left";
                         
+                        
+                        
+                        //abfrage ob fr angeklickt wurde
+                        
+                        if (franz == 0){
+                        
+                        div.innerHTML = '<div id="pagename"><b>' + pgnamefr + '</div><div style="clear: both"><img id="bildprgr"  src="data:image/jpg;base64,' + prgrbild + '"/></div>';
+                        
+                        
+                        }else{
+                        
                         div.innerHTML = '<div id="pagename"><b>' + pgname + '</div><div style="clear: both"><img id="bildprgr"  src="data:image/jpg;base64,' + prgrbild + '"/></div>';
+                        
+                        
+                        }
                         
                         var gr_fk = datahandler.data[index].gr_fk;
                         
@@ -648,6 +738,7 @@
                             for (var i = 0; i < lange; i++) {
                                 
                                 var subgruppen = datahandler.data[index].subGroups[i].name;
+                                var subnamefr = datahandler.data[index].subGroups[i].subname;
                                 var sg_fk = datahandler.data[index].subGroups[i].sg_fk;
                                 var gr = datahandler.data[index].gr_fk;
                                 var subBilder = datahandler.data[index].subGroups[i].image;
@@ -658,7 +749,19 @@
                                 //div.innerHTML = '<div  style="float: left; border: 0px;"><b>' + subgruppen + '</b></div><div style="clear: both"><img src="css/Probild.png"><div><div></div>';
                                 
                                 div.style.styleFloat = "left";
+                                
+                                
+                                if(franz == 0){
+                                    
+                                div.innerHTML = '<div id="pagename"><b>' + subnamefr + '</div><div style="clear: both"><img id="bildsub"  src="data:image/jpg;base64,' + subBilder + '"/>&nbsp;&nbsp;&nbsp;&nbsp;</div>';
+                                
+                                }else{
+                                    
                                 div.innerHTML = '<div id="pagename"><b>' + subgruppen + '</div><div style="clear: both"><img id="bildsub"  src="data:image/jpg;base64,' + subBilder + '"/>&nbsp;&nbsp;&nbsp;&nbsp;</div>';
+                                
+                                
+                                }
+                                
                                 
                                 $('#sub').append(div);
                                 
@@ -703,11 +806,24 @@
                                     for (var ii = 0; ii < prolange; ii++) {
                                         
                                         var produktename = datahandler.data[index].subGroups[i].products[ii].name;
+                                        var pronamefr = datahandler.data[index].subGroups[i].products[ii].prfrname;
                                         var div = document.createElement('div');
                                         var prbild = datahandler.data[index].subGroups[i].products[ii].image;
                                         
                                         div.style.styleFloat = "left";
-                                        div.innerHTML = '<div id="pagename"><b>' + produktename + '</div><div style="clear: both"><img id="bildpr" src="data:image/jpg;base64,' + prbild + '"/>&nbsp;&nbsp;&nbsp;&nbsp;</div>';
+                                        
+                                        if (franz == 0){
+                                        
+                                         div.innerHTML = '<div id="pagename"><b>' + pronamefr + '</div><div style="clear: both"><img id="bildpr" src="data:image/jpg;base64,' + prbild + '"/>&nbsp;&nbsp;&nbsp;&nbsp;</div>';
+                                        
+                                        }else{
+                                        
+                                         div.innerHTML = '<div id="pagename"><b>' + produktename + '</div><div style="clear: both"><img id="bildpr" src="data:image/jpg;base64,' + prbild + '"/>&nbsp;&nbsp;&nbsp;&nbsp;</div>';
+                                        
+                                        
+                                        }
+                                        
+                                      
                                         
                                         $('#products').append(div);
                                         
@@ -753,6 +869,7 @@
                                         if (grgr[2] == datahandler.data[index].subGroups[i].products[ii].pk) {
                                             
                                             var produktname = datahandler.data[index].subGroups[i].products[ii].name;
+                                            var pronamefr = datahandler.data[index].subGroups[i].products[ii].prfrname;
                                             var artikelgruppen = datahandler.data[index].subGroups[i].products[ii].articlegroups;
                                             
                                         }
@@ -769,8 +886,21 @@
                                                 var divname = document.createElement('div');
                                                 var produktbild1 = datahandler.data[index].subGroups[i].products[ii].image;
                                                 
-                                                $('#produktname').append(divname);
-                                                divname.innerHTML = '<div id="prddiv"><b><br>' + produktname + '</b></div><div ><img id="artgrpbild" src="data:image/jpg;base64,' + produktbild1 + '"/></div> ';
+                                               
+                                                
+                                                if(franz == 0){
+                                                    
+                                                 divname.innerHTML = '<div id="prddiv"><b><br>' + pronamefr + '</b></div><div ><img id="artgrpbild" src="data:image/jpg;base64,' + produktbild1 + '"/></div> ';
+                                                
+                                                }else{
+                                                
+                                                 divname.innerHTML = '<div id="prddiv"><b><br>' + produktname + '</b></div><div ><img id="artgrpbild" src="data:image/jpg;base64,' + produktbild1 + '"/></div> ';
+                                                
+                                                }
+                                                
+                                                
+                                                 $('#produktname').append(divname);
+                                               
                                                 
                                                 for (ind = 0; ind < artikellange; ind++) {
                                                     
@@ -778,16 +908,54 @@
                                                     var abmessung = datahandler.data[index].subGroups[i].products[ii].articles[ind].abmessung;
                                                     var migel1 = datahandler.data[index].subGroups[i].products[ii].articles[ind].migel1;
                                                     var verpackungshinweis = datahandler.data[index].subGroups[i].products[ii].articles[ind].verpackungshinweis;
+                                                    var hinweisfr = datahandler.data[index].subGroups[i].products[ii].articles[ind].verpackfr;
                                                     
                                                     console.log(artikel_nr);
                                                     
                                                     var div = document.createElement('div');
-                                                    div.style.styleFloat = "left";
-                                                    div.innerHTML = '<div id="lala"><b>' + verpackungshinweis + '</b></div><div>' + abmessung + '</div><div id="mainselection"></div><div><span>Artikel_Nr.:&nbsp&nbsp&nbsp&nbsp</span>' + artikel_nr + '</div><div>' + migel1 + '</div><hr style="color:grey; noshade siz="3"/>';
                                                     
-                                                    $('#artikelohneartikelgruppen').append(div);
+                                                   
+                                                    //div.style.styleFloat = "left";
+                                                    
+                                                    
+                                        if(franz ==0){
+                                                    
+                                                    
+                                                        if(hinweisfr== null){
+                                                    
+    div.innerHTML = '<div>' + abmessung + '</div><div id="mainselection"></div><div><span>numéro d article:&nbsp&nbsp&nbsp&nbsp</span>' + artikel_nr + '</div><div>' + migel1 + '</div><hr style="color:grey; noshade siz="3"/>';
+                                                    
+                                                            }else{
+                                                    
+    div.innerHTML = '<div id="lala"><b>' + hinweisfr + '</b></div><div>' + abmessung + '</div><div id="mainselection"></div><div><span>numéro d article:&nbsp&nbsp&nbsp&nbsp</span>' + artikel_nr + '</div><div>' + migel1 + '</div><hr style="color:grey; noshade siz="3"/>';
+                                                    
+                                                            }
+                                                   
+                                                    
+                                        }else{
+                                                        
+                                                        if(verpackungshinweis==null){
+                                                        
+                                                        
+                                                        
+                                                        div.innerHTML = '<div>' + abmessung + '</div><div id="mainselection"></div><div><span>Artikel_Nr.:&nbsp&nbsp&nbsp&nbsp</span>' + artikel_nr + '</div><div>' + migel1 + '</div><hr style="color:grey; noshade siz="3"/>';
+                                                        
+                                                        
+                                                        }else{
+                                                        
+                                                        
+                                                        
+                                                        div.innerHTML = '<div id="lala"><b>' + verpackungshinweis + '</b></div><div>' + abmessung + '</div><div id="mainselection"></div><div><span>Artikel_Nr.:&nbsp&nbsp&nbsp&nbsp</span>' + artikel_nr + '</div><div>' + migel1 + '</div><hr style="color:grey; noshade siz="3"/>';
+                                                        
+                                                        
+                                                        }
+                                                    
+                                                    }
                                                     
                                                 }
+ 
+                                                 $('#artikelohneartikelgruppen').append(div);
+
                                                 var divaa = document.createElement('div');
                                                 var mediacenter = 'Mediacenter';
                                                 
@@ -823,6 +991,7 @@
                                                         for (ind = 0; ind < lange; ind++) {
                                                             
                                                             var artikelgruppe = datahandler.data[index].subGroups[i].products[ii].articlegroups[ind].name;
+                                                            var argrfr= datahandler.data[index].subGroups[i].products[ii].articlegroups[ind].argrfr;
                                                             console.log(artikelgruppe);
                                                             var agbild = datahandler.data[index].subGroups[i].products[ii].articlegroups[ind].image;
                                                             
@@ -831,9 +1000,38 @@
                                                             
                                                             div.style.styleFloat = "left";
                                                             
-                                                            div.innerHTML = '<div id="pagename"><b>' + artikelgruppe + '</div><div style="clear: both"><img id="bildartikelgruppen"  src="data:image/jpg;base64,' + agbild + '"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>';
-                                                            $('#artikelgrp').append(div);
                                                             
+                                                            
+                                                            if(franz == 0){
+                                                                
+                                                                
+                                                                if(argrfr == null){
+                                                                
+                                                                div.innerHTML = '<div id="pagename"><b>' + artikelgruppe + '</div><div style="clear: both"><img id="bildartikelgruppen"  src="data:image/jpg;base64,' + agbild + '"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>';
+                                                               
+                                                                
+                                                                
+                                                                }else{
+                                                                
+                                                                div.innerHTML = '<div id="pagename"><b>' + argrfr + '</div><div style="clear: both"><img id="bildartikelgruppen"  src="data:image/jpg;base64,' + agbild + '"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>';
+                                                                
+                                                                
+                                                                
+                                                                
+                                                                }
+                      
+                                                            
+                                                            }else{
+                                                            
+                                                            div.innerHTML = '<div id="pagename"><b>' + artikelgruppe + '</div><div style="clear: both"><img id="bildartikelgruppen"  src="data:image/jpg;base64,' + agbild + '"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>';
+                                                       
+                                                            
+                                                            
+                                                            
+                                                            }
+                                                            
+                                                            
+                                                            $('#artikelgrp').append(div);
                                                             
                                                             
                                                             var argr_fk = datahandler.data[index].subGroups[i].products[ii].articlegroups[ind].argr_fk;
@@ -903,6 +1101,7 @@
                                                 for (ind = 0; ind < lange; ind++) {
                                                     
                                                     var artikelgruppename = datahandler.data[index].subGroups[i].products[ii].articlegroups[ind].name;
+                                                    var argrfr = datahandler.data[index].subGroups[i].products[ii].articlegroups[ind].argrfr;
                                                     var artlange = datahandler.data[index].subGroups[i].products[ii].articlegroups[ind].articles.length;
                                                     
                                                     if (grgr[3] == datahandler.data[index].subGroups[i].products[ii].articlegroups[ind].argr_fk) {
@@ -912,14 +1111,42 @@
                                                         
                                                         var div = document.createElement('div');
                                                         
+                                                        $('#artgrp').html('');
+                                                        
+                                                        if(franz==0){
+                                                        
+                                                        if(argrfr==null){
+                                                            
+                                                            
+                                                            div.innerHTML = '<div id="artikelgruppename"><br>' + artikelgruppename + '</div> <div ><img id="artgrpbild" src="data:image/jpg;base64,' + artgrpbild + '"/></div> ';
+                                                        
+                                                        }else{
+                                                        
+                                                        
+                                                        div.innerHTML = '<div id="artikelgruppename"><br>' + argrfr + '</div> <div ><img id="artgrpbild" src="data:image/jpg;base64,' + artgrpbild + '"/></div> ';
+                                                        
+                                                        }
+                                                        
+                                                        
+                                                        
+                                                        }else{
+                                                        
+                                                        
+                                                         div.innerHTML = '<div id="artikelgruppename"><br>' + artikelgruppename + '</div> <div ><img id="artgrpbild" src="data:image/jpg;base64,' + artgrpbild + '"/></div> ';
+                                                        
+                                                        
+                                                        }
+                                                        
+                                                        
                                                         $('#artgrp').append(div);
                                                         
-                                                        div.innerHTML = '<div id="artikelgruppename"><br>' + artikelgruppename + '</div> <div ><img id="artgrpbild" src="data:image/jpg;base64,' + artgrpbild + '"/></div> ';
+                                                       
                                                         
                                                         for (inde = 0; inde < artlange; inde++) {
                                                             
                                                             var abmessung = datahandler.data[index].subGroups[i].products[ii].articlegroups[ind].articles[inde].abmessungen;
                                                             var verpackungshinweis = datahandler.data[index].subGroups[i].products[ii].articlegroups[ind].articles[inde].verpackungshinweis;
+                                                            var hinweisfr = datahandler.data[index].subGroups[i].products[ii].articlegroups[ind].articles[inde].verpackfr;
                                                             var artikel_nr = datahandler.data[index].subGroups[i].products[ii].articlegroups[ind].articles[inde].artikel_nr;
                                                             var migel1 = datahandler.data[index].subGroups[i].products[ii].articlegroups[ind].articles[inde].migel1;
                                                             
@@ -937,10 +1164,50 @@
                                                             
                                                             //div.style.styleFloat = "left";
                                                             
-                                                            $('#artgrpart').append(divb);
-                                                            divb.innerHTML = '<div id="lala"><b>' + verpackungshinweis + '</b></div><div>' + abmessung + '</div><div id="mainselection"></div><div><span>Artikel_Nr.:&nbsp&nbsp&nbsp&nbsp</span>' + artikel_nr + '</div><div>' + migel1 + '</div><hr style="color:grey; noshade siz="3"/>';
+                                                            //$('#artgrpart').append(divb);
                                                             
+                                                            
+                                                            if(franz==0){
+                                                                
+                                                                if(hinweisfr ==null){
+                                                                    
+                                                                    
+                                                                    divb.innerHTML = '<div>' + abmessung + '</div><div id="mainselection"></div><div><span>numéro d article:&nbsp&nbsp&nbsp&nbsp</span>' + artikel_nr + '</div><div>' + migel1 + '</div><hr style="color:grey; noshade siz="3"/>';
+
+                                                                }else{
+                                                                
+                                                                
+                                                                divb.innerHTML = '<div id="lala"><b>' + hinweisfr + '</b></div><div>' + abmessung + '</div><div id="mainselection"></div><div><span>numéro d article:&nbsp&nbsp&nbsp&nbsp</span>' + artikel_nr + '</div><div>' + migel1 + '</div><hr style="color:grey; noshade siz="3"/>';
+     
+                                                                }
+                
+                                                            }else{
+                                                                
+                                                                
+                                                                
+                                                                if(verpackungshinweis==null){
+                                                                
+                                                                 divb.innerHTML = '</div><div>' + abmessung + '</div><div id="mainselection"></div><div><span>Artikel_Nr.:&nbsp&nbsp&nbsp&nbsp</span>' + artikel_nr + '</div><div>' + migel1 + '</div><hr style="color:grey; noshade siz="3"/>';
+                                                                
+                                                                
+                                                                }else{
+                                                                
+                                                                 divb.innerHTML = '<div id="lala"><b>' + verpackungshinweis + '</b></div><div>' + abmessung + '</div><div id="mainselection"></div><div><span>Artikel_Nr.:&nbsp&nbsp&nbsp&nbsp</span>' + artikel_nr + '</div><div>' + migel1 + '</div><hr style="color:grey; noshade siz="3"/>';
+                                                                
+                                                                
+                                                                }
+                      
+                                                            
+                                                            }
+                                                            
+                                                           
                                                         }
+                                                        
+                                                        
+                                                        
+                                                        $('#artgrpart').append(divb);
+                                                        
+                                                        
                                                         var divaa = document.createElement('div');
                                                         var mediacenter = 'Mediacenter';
                                                         
@@ -1117,7 +1384,7 @@
                            
                            // Daten als feld in localStorage speichern!
                            var feld = [];
-                            window.localStorage["feld"] = JSON.stringify(datahandler.data);
+                           window.localStorage["feld"] = JSON.stringify(datahandler.data);
                            var alleDaten = JSON.parse(window.localStorage["feld"]);
                            
                            
@@ -1636,9 +1903,9 @@
                     
                     console.log(EAN);
                     console.log('bin drinnen');
-                  
                     
-                
+                    
+                    
                     
                     for(var index=0; index < datahandler.data.length; index++){
                         var sublange = datahandler.data[index].subGroups.length;
@@ -1678,7 +1945,7 @@
                                                 
                                                 var tmp=[gr, sg_fk, pk, argr_fk];
                                                 datahandler.nextid=tmp;
-                                                $.mobile.pageContainer.pagecontainer("change","#ArtikelgruppenArtikel", {test: "Hello World!"});  
+                                                $.mobile.pageContainer.pagecontainer("change","#ArtikelgruppenArtikel", {test: "Hello World!"});
                                                 
                                                 
                                                 /*var makeShowItemEventListener=function (element, sg_fk, pk, argr_fk){
@@ -1689,7 +1956,7 @@
                                                  $.mobile.pageContainer.pagecontainer("change","#ArtikelgruppenArtikel", {test: "Hello World!"});
                                                  };
                                                  }
-                                                 diva.onclick= makeShowItemEventListener(gr, sg_fk, pk, argr_fk);*/					 		
+                                                 diva.onclick= makeShowItemEventListener(gr, sg_fk, pk, argr_fk);*/
                                                 
                                                 break;
                                             }else{
@@ -1759,35 +2026,35 @@
             
             document.getElementById("icon").style.display="none";
             
-    
-           
-           var inet = navigator.online
-          
+            
+            
+            var inet = navigator.online
+            
             
             if (inet === false) {
                 
-             console.log('offline');
+                console.log('offline');
                 $(document).ready(function () {
                                   datahandler.localStorage_ausgeben();
                                   
                                   });
                                   
             } else {
-               
+                
                 console.log('online');
                 $(document).ready(function () {
                                   
                                   datahandler.loaddata();
                                   
-                        
+                                  
                                   
                                   });
-                
                                   
-                }
+                                  
+            }
             
         }
-    
+        
         
         
         
@@ -1820,257 +2087,257 @@
                                                                                                                  $(document).on('pagebeforeshow', '#Suche', function (event, data) {
                                                                                                                                 datahandler.showMediacenter(datahandler.nextid);
                                                                                                                                 });
-                                                                                                                          
-                                                                                                                                               
-                                                                                                                                               
-                                                                                                                                               
-                                                                                                                                               
-                                /***************************scanner***********/
-                                                                                                                                               
-                              $('#scan').click(function(){
-                                                                                                                                                                
-                                               console.log('scanning');
-                                               var scanner = window.cordova.require("cordova/plugin/BarcodeScanner");
-                                               scanner.scan( function (result) {
-                                            console.log(result.text);
-                                            var EAN = result.text;
-                              
-                                                            if(EAN === ""){
-                                                                console.log("abgebrochen");
-                                                                                                                                                                             
-                                                            }else{
-                                                            datahandler.EanSuchen(EAN);
-                                                                                                                                                                             
-                          /*
-                          alert("We got a barcode\n" +
-                          "Result: " + result.text + "\n" +
-                          "Format: " + result.format + "\n" +
-                          "Cancelled: " + result.cancelled);
-                                                                                                                                                                              
-                          console.log("Scanner result: \n" +
-                          "text: " + result.text + "\n" +
-                          "format: " + result.format + "\n" +
-                         "cancelled: " + result.cancelled + "\n");
-                          document.getElementById("info").innerHTML = result.text;
-                          console.log(result);
-                                                                                                                                                                              
-                          */}
-                            })
-                          });
-                          $('#scansub').click(function(){
-                                           
-                                           console.log('scanning');
-                                           var scanner = window.cordova.require("cordova/plugin/BarcodeScanner");
-                                           scanner.scan( function (result) {
-                                                        console.log(result.text);
-                                                        var EAN = result.text;
-                                                        
-                                                        if(EAN === ""){
-                                                        console.log("abgebrochen");
-                                                        
-                                                        }else{
-                                                        datahandler.EanSuchen(EAN);
-                                                        
-                                                        /*
-                                                         alert("We got a barcode\n" +
-                                                         "Result: " + result.text + "\n" +
-                                                         "Format: " + result.format + "\n" +
-                                                         "Cancelled: " + result.cancelled);
-                                                         
-                                                         console.log("Scanner result: \n" +
-                                                         "text: " + result.text + "\n" +
-                                                         "format: " + result.format + "\n" +
-                                                         "cancelled: " + result.cancelled + "\n");
-                                                         document.getElementById("info").innerHTML = result.text;
-                                                         console.log(result);
-                                                         
-                                                         */}
-                                                        })
-                                           });
-                                           $('#scanpro').click(function(){
-                                                                 
-                                                                 console.log('scanning');
-                                                                 var scanner = window.cordova.require("cordova/plugin/BarcodeScanner");
-                                                                 scanner.scan( function (result) {
-                                                                              console.log(result.text);
-                                                                              var EAN = result.text;
-                                                                              
-                                                                              if(EAN === ""){
-                                                                              console.log("abgebrochen");
-                                                                              
-                                                                              }else{
-                                                                              datahandler.EanSuchen(EAN);
-                                                                              
-                                                                              /*
-                                                                               alert("We got a barcode\n" +
-                                                                               "Result: " + result.text + "\n" +
-                                                                               "Format: " + result.format + "\n" +
-                                                                               "Cancelled: " + result.cancelled);
-                                                                               
-                                                                               console.log("Scanner result: \n" +
-                                                                               "text: " + result.text + "\n" +
-                                                                               "format: " + result.format + "\n" +
-                                                                               "cancelled: " + result.cancelled + "\n");
-                                                                               document.getElementById("info").innerHTML = result.text;
-                                                                               console.log(result);
-                                                                               
-                                                                               */}
-                                                                              })
-                                                                 });
-
-                                                $('#scanartikelgruppen').click(function(){
-                                                                             
-                                                                             console.log('scanning');
-                                                                             var scanner = window.cordova.require("cordova/plugin/BarcodeScanner");
-                                                                             scanner.scan( function (result) {
-                                                                                          console.log(result.text);
-                                                                                          var EAN = result.text;
-                                                                                          
-                                                                                          if(EAN === ""){
-                                                                                          console.log("abgebrochen");
-                                                                                          
-                                                                                          }else{
-                                                                                          datahandler.EanSuchen(EAN);
-                                                                                          
-                                                                                          /*
-                                                                                           alert("We got a barcode\n" +
-                                                                                           "Result: " + result.text + "\n" +
-                                                                                           "Format: " + result.format + "\n" +
-                                                                                           "Cancelled: " + result.cancelled);
-                                                                                           
-                                                                                           console.log("Scanner result: \n" +
-                                                                                           "text: " + result.text + "\n" +
-                                                                                           "format: " + result.format + "\n" +
-                                                                                           "cancelled: " + result.cancelled + "\n");
-                                                                                           document.getElementById("info").innerHTML = result.text;
-                                                                                           console.log(result);
-                                                                                           
-                                                                                           */}
-                                                                                          })
-                                                                             });
-                                                                             $('#scanartgrp').click(function(){
-                                                                                                            
-                                                                                                            console.log('scanning');
-                                                                                                            var scanner = window.cordova.require("cordova/plugin/BarcodeScanner");
-                                                                                                            scanner.scan( function (result) {
-                                                                                                                         console.log(result.text);
-                                                                                                                         var EAN = result.text;
-                                                                                                                         
-                                                                                                                         if(EAN === ""){
-                                                                                                                         console.log("abgebrochen");
-                                                                                                                         
-                                                                                                                         }else{
-                                                                                                                         datahandler.EanSuchen(EAN);
-                                                                                                                         
-                                                                                                                         /*
-                                                                                                                          alert("We got a barcode\n" +
-                                                                                                                          "Result: " + result.text + "\n" +
-                                                                                                                          "Format: " + result.format + "\n" +
-                                                                                                                          "Cancelled: " + result.cancelled);
-                                                                                                                          
-                                                                                                                          console.log("Scanner result: \n" +
-                                                                                                                          "text: " + result.text + "\n" +
-                                                                                                                          "format: " + result.format + "\n" +
-                                                                                                                          "cancelled: " + result.cancelled + "\n");
-                                                                                                                          document.getElementById("info").innerHTML = result.text;
-                                                                                                                          console.log(result);
-                                                                                                                          
-                                                                                                                          */}
-                                                                                                                         })
-                                                                                                            });
-                                                                                                            $('#scanmedia').click(function(){
-                                                                                                                                           
-                                                                                                                                           console.log('scanning');
-                                                                                                                                           var scanner = window.cordova.require("cordova/plugin/BarcodeScanner");
-                                                                                                                                           scanner.scan( function (result) {
-                                                                                                                                                        console.log(result.text);
-                                                                                                                                                        var EAN = result.text;
-                                                                                                                                                        
-                                                                                                                                                        if(EAN === ""){
-                                                                                                                                                        console.log("abgebrochen");
-                                                                                                                                                        
-                                                                                                                                                        }else{
-                                                                                                                                                        datahandler.EanSuchen(EAN);
-                                                                                                                                                        
-                                                                                                                                                        /*
-                                                                                                                                                         alert("We got a barcode\n" +
-                                                                                                                                                         "Result: " + result.text + "\n" +
-                                                                                                                                                         "Format: " + result.format + "\n" +
-                                                                                                                                                         "Cancelled: " + result.cancelled);
-                                                                                                                                                         
-                                                                                                                                                         console.log("Scanner result: \n" +
-                                                                                                                                                         "text: " + result.text + "\n" +
-                                                                                                                                                         "format: " + result.format + "\n" +
-                                                                                                                                                         "cancelled: " + result.cancelled + "\n");
-                                                                                                                                                         document.getElementById("info").innerHTML = result.text;
-                                                                                                                                                         console.log(result);
-                                                                                                                                                         
-                                                                                                                                                         */}
-                                                                                                                                                        })
-                                                                                                                                           });
-                                                                                                                                           $('#scansuche').click(function(){
-                                                                                                                                                                          
-                                                                                                                                                                          console.log('scanning');
-                                                                                                                                                                          var scanner = window.cordova.require("cordova/plugin/BarcodeScanner");
-                                                                                                                                                                          scanner.scan( function (result) {
-                                                                                                                                                                                       console.log(result.text);
-                                                                                                                                                                                       var EAN = result.text;
-                                                                                                                                                                                       
-                                                                                                                                                                                       if(EAN === ""){
-                                                                                                                                                                                       console.log("abgebrochen");
-                                                                                                                                                                                       
-                                                                                                                                                                                       }else{
-                                                                                                                                                                                       datahandler.EanSuchen(EAN);
-                                                                                                                                                                                       
-                                                                                                                                                                                       /*
-                                                                                                                                                                                        alert("We got a barcode\n" +
-                                                                                                                                                                                        "Result: " + result.text + "\n" +
-                                                                                                                                                                                        "Format: " + result.format + "\n" +
-                                                                                                                                                                                        "Cancelled: " + result.cancelled);
-                                                                                                                                                                                        
-                                                                                                                                                                                        console.log("Scanner result: \n" +
-                                                                                                                                                                                        "text: " + result.text + "\n" +
-                                                                                                                                                                                        "format: " + result.format + "\n" +
-                                                                                                                                                                                        "cancelled: " + result.cancelled + "\n");
-                                                                                                                                                                                        document.getElementById("info").innerHTML = result.text;
-                                                                                                                                                                                        console.log(result);
-                                                                                                                                                                                        
-                                                                                                                                                                                        */}
-                                                                                                                                                                                       })
-                                                                                                                                                                          });
-                                                                                                                                                                          $('#scanartikelsuche').click(function(){
-                                                                                                                                                                                                         
-                                                                                                                                                                                                         console.log('scanning');
-                                                                                                                                                                                                         var scanner = window.cordova.require("cordova/plugin/BarcodeScanner");
-                                                                                                                                                                                                         scanner.scan( function (result) {
-                                                                                                                                                                                                                      console.log(result.text);
-                                                                                                                                                                                                                      var EAN = result.text;
-                                                                                                                                                                                                                      
-                                                                                                                                                                                                                      if(EAN === ""){
-                                                                                                                                                                                                                      console.log("abgebrochen");
-                                                                                                                                                                                                                      
-                                                                                                                                                                                                                      }else{
-                                                                                                                                                                                                                      datahandler.EanSuchen(EAN);
-                                                                                                                                                                                                                      
-                                                                                                                                                                                                                      /*
-                                                                                                                                                                                                                       alert("We got a barcode\n" +
-                                                                                                                                                                                                                       "Result: " + result.text + "\n" +
-                                                                                                                                                                                                                       "Format: " + result.format + "\n" +
-                                                                                                                                                                                                                       "Cancelled: " + result.cancelled);
-                                                                                                                                                                                                                       
-                                                                                                                                                                                                                       console.log("Scanner result: \n" +
-                                                                                                                                                                                                                       "text: " + result.text + "\n" +
-                                                                                                                                                                                                                       "format: " + result.format + "\n" +
-                                                                                                                                                                                                                       "cancelled: " + result.cancelled + "\n");
-                                                                                                                                                                                                                       document.getElementById("info").innerHTML = result.text;
-                                                                                                                                                                                                                       console.log(result);
-                                                                                                                                                                                                                       
-                                                                                                                                                                                                                       */}
-                                                                                                                                                                                                                      })
-                                                                                                                                                                                                         });
-                                           
-                                                                                                 
-                                                                                                                                                                
+                                                                                                                                
+                                                                                                                                
+                                                                                                                                
+                                                                                                                                
+                                                                                                                                
+                                                                                                                                /***************************scanner***********/
+                                                                                                                                
+                                                                                                                                $('#scan').click(function(){
+                                                                                                                                                 
+                                                                                                                                                 console.log('scanning');
+                                                                                                                                                 var scanner = window.cordova.require("cordova/plugin/BarcodeScanner");
+                                                                                                                                                 scanner.scan( function (result) {
+                                                                                                                                                              console.log(result.text);
+                                                                                                                                                              var EAN = result.text;
+                                                                                                                                                              
+                                                                                                                                                              if(EAN === ""){
+                                                                                                                                                              console.log("abgebrochen");
+                                                                                                                                                              
+                                                                                                                                                              }else{
+                                                                                                                                                              datahandler.EanSuchen(EAN);
+                                                                                                                                                              
+                                                                                                                                                              /*
+                                                                                                                                                               alert("We got a barcode\n" +
+                                                                                                                                                               "Result: " + result.text + "\n" +
+                                                                                                                                                               "Format: " + result.format + "\n" +
+                                                                                                                                                               "Cancelled: " + result.cancelled);
+                                                                                                                                                               
+                                                                                                                                                               console.log("Scanner result: \n" +
+                                                                                                                                                               "text: " + result.text + "\n" +
+                                                                                                                                                               "format: " + result.format + "\n" +
+                                                                                                                                                               "cancelled: " + result.cancelled + "\n");
+                                                                                                                                                               document.getElementById("info").innerHTML = result.text;
+                                                                                                                                                               console.log(result);
+                                                                                                                                                               
+                                                                                                                                                               */}
+                                                                                                                                                              })
+                                                                                                                                                 });
+                                                                                                                                                 $('#scansub').click(function(){
+                                                                                                                                                                     
+                                                                                                                                                                     console.log('scanning');
+                                                                                                                                                                     var scanner = window.cordova.require("cordova/plugin/BarcodeScanner");
+                                                                                                                                                                     scanner.scan( function (result) {
+                                                                                                                                                                                  console.log(result.text);
+                                                                                                                                                                                  var EAN = result.text;
+                                                                                                                                                                                  
+                                                                                                                                                                                  if(EAN === ""){
+                                                                                                                                                                                  console.log("abgebrochen");
+                                                                                                                                                                                  
+                                                                                                                                                                                  }else{
+                                                                                                                                                                                  datahandler.EanSuchen(EAN);
+                                                                                                                                                                                  
+                                                                                                                                                                                  /*
+                                                                                                                                                                                   alert("We got a barcode\n" +
+                                                                                                                                                                                   "Result: " + result.text + "\n" +
+                                                                                                                                                                                   "Format: " + result.format + "\n" +
+                                                                                                                                                                                   "Cancelled: " + result.cancelled);
+                                                                                                                                                                                   
+                                                                                                                                                                                   console.log("Scanner result: \n" +
+                                                                                                                                                                                   "text: " + result.text + "\n" +
+                                                                                                                                                                                   "format: " + result.format + "\n" +
+                                                                                                                                                                                   "cancelled: " + result.cancelled + "\n");
+                                                                                                                                                                                   document.getElementById("info").innerHTML = result.text;
+                                                                                                                                                                                   console.log(result);
+                                                                                                                                                                                   
+                                                                                                                                                                                   */}
+                                                                                                                                                                                  })
+                                                                                                                                                                     });
+                                                                                                                                                                     $('#scanpro').click(function(){
+                                                                                                                                                                                         
+                                                                                                                                                                                         console.log('scanning');
+                                                                                                                                                                                         var scanner = window.cordova.require("cordova/plugin/BarcodeScanner");
+                                                                                                                                                                                         scanner.scan( function (result) {
+                                                                                                                                                                                                      console.log(result.text);
+                                                                                                                                                                                                      var EAN = result.text;
+                                                                                                                                                                                                      
+                                                                                                                                                                                                      if(EAN === ""){
+                                                                                                                                                                                                      console.log("abgebrochen");
+                                                                                                                                                                                                      
+                                                                                                                                                                                                      }else{
+                                                                                                                                                                                                      datahandler.EanSuchen(EAN);
+                                                                                                                                                                                                      
+                                                                                                                                                                                                      /*
+                                                                                                                                                                                                       alert("We got a barcode\n" +
+                                                                                                                                                                                                       "Result: " + result.text + "\n" +
+                                                                                                                                                                                                       "Format: " + result.format + "\n" +
+                                                                                                                                                                                                       "Cancelled: " + result.cancelled);
+                                                                                                                                                                                                       
+                                                                                                                                                                                                       console.log("Scanner result: \n" +
+                                                                                                                                                                                                       "text: " + result.text + "\n" +
+                                                                                                                                                                                                       "format: " + result.format + "\n" +
+                                                                                                                                                                                                       "cancelled: " + result.cancelled + "\n");
+                                                                                                                                                                                                       document.getElementById("info").innerHTML = result.text;
+                                                                                                                                                                                                       console.log(result);
+                                                                                                                                                                                                       
+                                                                                                                                                                                                       */}
+                                                                                                                                                                                                      })
+                                                                                                                                                                                         });
+                                                                                                                                                                                         
+                                                                                                                                                                                         $('#scanartikelgruppen').click(function(){
+                                                                                                                                                                                                                        
+                                                                                                                                                                                                                        console.log('scanning');
+                                                                                                                                                                                                                        var scanner = window.cordova.require("cordova/plugin/BarcodeScanner");
+                                                                                                                                                                                                                        scanner.scan( function (result) {
+                                                                                                                                                                                                                                     console.log(result.text);
+                                                                                                                                                                                                                                     var EAN = result.text;
+                                                                                                                                                                                                                                     
+                                                                                                                                                                                                                                     if(EAN === ""){
+                                                                                                                                                                                                                                     console.log("abgebrochen");
+                                                                                                                                                                                                                                     
+                                                                                                                                                                                                                                     }else{
+                                                                                                                                                                                                                                     datahandler.EanSuchen(EAN);
+                                                                                                                                                                                                                                     
+                                                                                                                                                                                                                                     /*
+                                                                                                                                                                                                                                      alert("We got a barcode\n" +
+                                                                                                                                                                                                                                      "Result: " + result.text + "\n" +
+                                                                                                                                                                                                                                      "Format: " + result.format + "\n" +
+                                                                                                                                                                                                                                      "Cancelled: " + result.cancelled);
+                                                                                                                                                                                                                                      
+                                                                                                                                                                                                                                      console.log("Scanner result: \n" +
+                                                                                                                                                                                                                                      "text: " + result.text + "\n" +
+                                                                                                                                                                                                                                      "format: " + result.format + "\n" +
+                                                                                                                                                                                                                                      "cancelled: " + result.cancelled + "\n");
+                                                                                                                                                                                                                                      document.getElementById("info").innerHTML = result.text;
+                                                                                                                                                                                                                                      console.log(result);
+                                                                                                                                                                                                                                      
+                                                                                                                                                                                                                                      */}
+                                                                                                                                                                                                                                     })
+                                                                                                                                                                                                                        });
+                                                                                                                                                                                                                        $('#scanartgrp').click(function(){
+                                                                                                                                                                                                                                               
+                                                                                                                                                                                                                                               console.log('scanning');
+                                                                                                                                                                                                                                               var scanner = window.cordova.require("cordova/plugin/BarcodeScanner");
+                                                                                                                                                                                                                                               scanner.scan( function (result) {
+                                                                                                                                                                                                                                                            console.log(result.text);
+                                                                                                                                                                                                                                                            var EAN = result.text;
+                                                                                                                                                                                                                                                            
+                                                                                                                                                                                                                                                            if(EAN === ""){
+                                                                                                                                                                                                                                                            console.log("abgebrochen");
+                                                                                                                                                                                                                                                            
+                                                                                                                                                                                                                                                            }else{
+                                                                                                                                                                                                                                                            datahandler.EanSuchen(EAN);
+                                                                                                                                                                                                                                                            
+                                                                                                                                                                                                                                                            /*
+                                                                                                                                                                                                                                                             alert("We got a barcode\n" +
+                                                                                                                                                                                                                                                             "Result: " + result.text + "\n" +
+                                                                                                                                                                                                                                                             "Format: " + result.format + "\n" +
+                                                                                                                                                                                                                                                             "Cancelled: " + result.cancelled);
+                                                                                                                                                                                                                                                             
+                                                                                                                                                                                                                                                             console.log("Scanner result: \n" +
+                                                                                                                                                                                                                                                             "text: " + result.text + "\n" +
+                                                                                                                                                                                                                                                             "format: " + result.format + "\n" +
+                                                                                                                                                                                                                                                             "cancelled: " + result.cancelled + "\n");
+                                                                                                                                                                                                                                                             document.getElementById("info").innerHTML = result.text;
+                                                                                                                                                                                                                                                             console.log(result);
+                                                                                                                                                                                                                                                             
+                                                                                                                                                                                                                                                             */}
+                                                                                                                                                                                                                                                            })
+                                                                                                                                                                                                                                               });
+                                                                                                                                                                                                                                               $('#scanmedia').click(function(){
+                                                                                                                                                                                                                                                                     
+                                                                                                                                                                                                                                                                     console.log('scanning');
+                                                                                                                                                                                                                                                                     var scanner = window.cordova.require("cordova/plugin/BarcodeScanner");
+                                                                                                                                                                                                                                                                     scanner.scan( function (result) {
+                                                                                                                                                                                                                                                                                  console.log(result.text);
+                                                                                                                                                                                                                                                                                  var EAN = result.text;
+                                                                                                                                                                                                                                                                                  
+                                                                                                                                                                                                                                                                                  if(EAN === ""){
+                                                                                                                                                                                                                                                                                  console.log("abgebrochen");
+                                                                                                                                                                                                                                                                                  
+                                                                                                                                                                                                                                                                                  }else{
+                                                                                                                                                                                                                                                                                  datahandler.EanSuchen(EAN);
+                                                                                                                                                                                                                                                                                  
+                                                                                                                                                                                                                                                                                  /*
+                                                                                                                                                                                                                                                                                   alert("We got a barcode\n" +
+                                                                                                                                                                                                                                                                                   "Result: " + result.text + "\n" +
+                                                                                                                                                                                                                                                                                   "Format: " + result.format + "\n" +
+                                                                                                                                                                                                                                                                                   "Cancelled: " + result.cancelled);
+                                                                                                                                                                                                                                                                                   
+                                                                                                                                                                                                                                                                                   console.log("Scanner result: \n" +
+                                                                                                                                                                                                                                                                                   "text: " + result.text + "\n" +
+                                                                                                                                                                                                                                                                                   "format: " + result.format + "\n" +
+                                                                                                                                                                                                                                                                                   "cancelled: " + result.cancelled + "\n");
+                                                                                                                                                                                                                                                                                   document.getElementById("info").innerHTML = result.text;
+                                                                                                                                                                                                                                                                                   console.log(result);
+                                                                                                                                                                                                                                                                                   
+                                                                                                                                                                                                                                                                                   */}
+                                                                                                                                                                                                                                                                                  })
+                                                                                                                                                                                                                                                                     });
+                                                                                                                                                                                                                                                                     $('#scansuche').click(function(){
+                                                                                                                                                                                                                                                                                           
+                                                                                                                                                                                                                                                                                           console.log('scanning');
+                                                                                                                                                                                                                                                                                           var scanner = window.cordova.require("cordova/plugin/BarcodeScanner");
+                                                                                                                                                                                                                                                                                           scanner.scan( function (result) {
+                                                                                                                                                                                                                                                                                                        console.log(result.text);
+                                                                                                                                                                                                                                                                                                        var EAN = result.text;
+                                                                                                                                                                                                                                                                                                        
+                                                                                                                                                                                                                                                                                                        if(EAN === ""){
+                                                                                                                                                                                                                                                                                                        console.log("abgebrochen");
+                                                                                                                                                                                                                                                                                                        
+                                                                                                                                                                                                                                                                                                        }else{
+                                                                                                                                                                                                                                                                                                        datahandler.EanSuchen(EAN);
+                                                                                                                                                                                                                                                                                                        
+                                                                                                                                                                                                                                                                                                        /*
+                                                                                                                                                                                                                                                                                                         alert("We got a barcode\n" +
+                                                                                                                                                                                                                                                                                                         "Result: " + result.text + "\n" +
+                                                                                                                                                                                                                                                                                                         "Format: " + result.format + "\n" +
+                                                                                                                                                                                                                                                                                                         "Cancelled: " + result.cancelled);
+                                                                                                                                                                                                                                                                                                         
+                                                                                                                                                                                                                                                                                                         console.log("Scanner result: \n" +
+                                                                                                                                                                                                                                                                                                         "text: " + result.text + "\n" +
+                                                                                                                                                                                                                                                                                                         "format: " + result.format + "\n" +
+                                                                                                                                                                                                                                                                                                         "cancelled: " + result.cancelled + "\n");
+                                                                                                                                                                                                                                                                                                         document.getElementById("info").innerHTML = result.text;
+                                                                                                                                                                                                                                                                                                         console.log(result);
+                                                                                                                                                                                                                                                                                                         
+                                                                                                                                                                                                                                                                                                         */}
+                                                                                                                                                                                                                                                                                                        })
+                                                                                                                                                                                                                                                                                           });
+                                                                                                                                                                                                                                                                                           $('#scanartikelsuche').click(function(){
+                                                                                                                                                                                                                                                                                                                        
+                                                                                                                                                                                                                                                                                                                        console.log('scanning');
+                                                                                                                                                                                                                                                                                                                        var scanner = window.cordova.require("cordova/plugin/BarcodeScanner");
+                                                                                                                                                                                                                                                                                                                        scanner.scan( function (result) {
+                                                                                                                                                                                                                                                                                                                                     console.log(result.text);
+                                                                                                                                                                                                                                                                                                                                     var EAN = result.text;
+                                                                                                                                                                                                                                                                                                                                     
+                                                                                                                                                                                                                                                                                                                                     if(EAN === ""){
+                                                                                                                                                                                                                                                                                                                                     console.log("abgebrochen");
+                                                                                                                                                                                                                                                                                                                                     
+                                                                                                                                                                                                                                                                                                                                     }else{
+                                                                                                                                                                                                                                                                                                                                     datahandler.EanSuchen(EAN);
+                                                                                                                                                                                                                                                                                                                                     
+                                                                                                                                                                                                                                                                                                                                     /*
+                                                                                                                                                                                                                                                                                                                                      alert("We got a barcode\n" +
+                                                                                                                                                                                                                                                                                                                                      "Result: " + result.text + "\n" +
+                                                                                                                                                                                                                                                                                                                                      "Format: " + result.format + "\n" +
+                                                                                                                                                                                                                                                                                                                                      "Cancelled: " + result.cancelled);
+                                                                                                                                                                                                                                                                                                                                      
+                                                                                                                                                                                                                                                                                                                                      console.log("Scanner result: \n" +
+                                                                                                                                                                                                                                                                                                                                      "text: " + result.text + "\n" +
+                                                                                                                                                                                                                                                                                                                                      "format: " + result.format + "\n" +
+                                                                                                                                                                                                                                                                                                                                      "cancelled: " + result.cancelled + "\n");
+                                                                                                                                                                                                                                                                                                                                      document.getElementById("info").innerHTML = result.text;
+                                                                                                                                                                                                                                                                                                                                      console.log(result);
+                                                                                                                                                                                                                                                                                                                                      
+                                                                                                                                                                                                                                                                                                                                      */}
+                                                                                                                                                                                                                                                                                                                                     })
+                                                                                                                                                                                                                                                                                                                        });
+                                                                                                                                                                                                                                                                                                                        
+                                                                                                                                                                                                                                                                                                                        
+                                                                                                                                                                                                                                                                                                                        
             </script>
         
         
