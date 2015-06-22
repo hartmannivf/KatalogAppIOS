@@ -29,7 +29,7 @@
 
 @media only screen and (min-device-width:300px) and (max-device-width:350px)and (orientation: portrait) {
     
-    /*Smartphones Iphone4,5*/
+    /*Smartphones Iphone 4,5*/
     
     body {
         background-image: url(start_smatphones.png);
@@ -44,13 +44,15 @@
     }
     
     a:link {color:white; text-decoration:none}
+    
+    
     #sprachen{
         
         color: blue;
         font-family: OpenSans-Light;
         font-size: 0.8em;
-        margin-left: 75%;
-        margin-top:2%;
+        margin-left: 46%;
+        
         
     }
     
@@ -68,7 +70,7 @@
         min-width: 100%;
         max-width: 300%;
         position: absolute;
-        top: 18%;
+        top: 14%;
         text-align: center;
     }
     
@@ -83,9 +85,9 @@
     
     #hartmann {
         width: 20%;
-        margin-top:10%;
+        margin-top:12%;
         margin-left: 5%;
-        bottom: 10px;
+        
         
     }
     
@@ -902,6 +904,26 @@
     
     .mainContent {
         width: 100%;
+    }
+    
+    a:link {color:white; text-decoration:none}
+    #sprachen{
+        
+        color: blue;
+        font-family: OpenSans-Light;
+        font-size: 0.8em;
+        margin-left: 75%;
+        margin-top:2%;
+        
+    }
+    #sprachen1{
+        
+        color: blue;
+        font-family: OpenSans-Light;
+        font-size: 0.8em;
+        margin-left: 75%;
+        margin-top:10%;
+        
     }
     
     #uber {
@@ -1721,6 +1743,31 @@
             width: 100%;
         }
 
+
+a:link {color:white; text-decoration:none}
+#sprachen{
+    
+    color: blue;
+    font-family: OpenSans-Light;
+    font-size: 0.9em;
+    margin-left: 43%;
+   
+    
+}
+
+#sprachen1{
+    
+    color: blue;
+    font-family: OpenSans-Light;
+    font-size: 0.8em;
+    margin-left: 75%;
+    margin-top:10%;
+    
+}
+
+
+
+
         #uber {
             min-width: 100%;
             max-width: 300%;
@@ -1738,9 +1785,9 @@
 
         #hartmann {
             width: 20%;
-            margin-top:10%;
+            margin-top:13%;
             margin-left: 5%;
-            bottom: 10px;
+           
     
         }
         
@@ -2146,8 +2193,8 @@
         width:auto;
         margin-left:5%;
         margin-right:5%;
-        margin-top:10%;
-        height:530px;
+        margin-top:7%;
+        height:500px;
        	border-radius: 4px;
         background:rgba(255,255,255,0.5);
         text-align:center;
@@ -2162,32 +2209,45 @@
         width:auto;
         margin-left:5%;
         margin-right:5%;
-        margin-top:33%;
-        height:510px;
+        margin-top:7%;
+        height:500px;
        	border-radius: 4px;
         background:rgba(255,255,255,0.5);
         text-align:center;
         
         }
+             #produktdivtrans{
+                 
+                 width:auto;
+                 margin-left:5%;
+                 margin-right:5%;
+                 margin-top:6%;
+                 height:430px;
+                 border-radius: 4px;
+                 background:rgba(255,255,255,0.5);
+                 text-align:center;
+                 
+             }
         
         #artgrpdivtrans{
             width:auto;
             margin-left:5%;
-            margin-right:5%;
+            margin-right:7%;
             margin-top:33%;
-            height:510px;
+            height:500px;
             border-radius: 4px;
             background:rgba(255,255,255,0.5);
             text-align:center;
         }
 
+
     #produktgruppen_inhalt {
         color: #1a4064;
         font-size: 1.0em;
         font-family:OpenSans-Regular;
-        height: 500px;
+        height: 480px;
         width: auto;
-        top:25%;
+        top:29%;
         text-align:center;
         overflow:scroll;
         border-radius: 4px;
@@ -2222,6 +2282,7 @@
         border-radius: 4px;
 
     }
+
 
 
 
@@ -2404,7 +2465,7 @@
         font-family: OpenSans-Regular;
         margin-left: 4%;
         margin-right:4%;
-        margin-top:30%;
+        margin-top:90%;
         border-radius: 4px;
     }
 
@@ -2546,6 +2607,27 @@ font-family:openSand-Regular;
     
     .mainContent {
         width: 100%;
+    }
+    
+    
+    a:link {color:white; text-decoration:none}
+    #sprachen{
+        
+        color: blue;
+        font-family: OpenSans-Light;
+        font-size: 0.8em;
+        margin-left: 75%;
+        margin-top:2%;
+        
+    }
+    #sprachen1{
+        
+        color: blue;
+        font-family: OpenSans-Light;
+        font-size: 0.8em;
+        margin-left: 75%;
+        margin-top:10%;
+        
     }
     
     #uber {
